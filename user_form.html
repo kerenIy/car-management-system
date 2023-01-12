@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER FORM</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/0a4991b62f.js"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navigation-bar">
+        <div class="logo">
+            <img src="images/logo-img.svg" alt="" class="logo-img">
+            <!--<p>Group 5</p>-->
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="">Contact Us</a>
+            <a href="">About</a>
+            <a href=""><i class="fa-solid fa-user"></i></a>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="container-banner">
+            <div class="text">
+                <h3>NEW USER REGISTRATION</h3>
+                <p>Register new car</p>
+            </div>
+            <div class="illustration">
+                <img src="images/user-img-svg.svg" alt="" class="banner-img">
+            </div>
+        </div>
+
+        <div class="form-container">
+            <h4>ENTER USER DETAILS HERE</h4>
+            <form action="user_form.php"
+            method="post">
+                <!--imput for user last name-->
+                <label for="lname">Last name:</label>
+                <br>
+                <input type="text" id="lname" name="first_name" value=""><br>
+        
+                <!--imput for user first name-->
+                <label for="fname">First name:</label>
+                <br>
+                <input type="text" id="fname" name="last_name" value=""><br>
+        
+                <!--imput for user gender-->
+                <label for="sex">Gender:</label>
+                <br>
+                <div class="gender">
+                    <input type="radio" name="sex" id="gender" value="f">
+                    <label for="">Female</label>
+                    <input type="radio" name="sex" id="gender" value="m">
+                    <label for="">Male</label>
+                    <input type="radio" name="sex" id="gender" value="o">
+                    <label for="">Others</label>
+                </div><br>
+                
+                <!--input for user email-->
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" id="email" name="email" value=""><br>
+        
+                <!--input for user phone number-->
+                <label for="phone number">Phone Number:</label>
+                <br>
+                <input type="tel" id="phone number" name="phone_no" value="" 
+                placeholder="07034257189" maxlength="11"><br><br>
+        
+                <!--input for user address-->
+                <label for="address">Address:</label>
+                <br>
+                <input type="text" id="address" name="address" value=""><br>
+        
+                <!--input for user car issues-->
+                <label for="Car issues">Car issues:</label>
+                <br>
+                <select name="issue" id="Car issues">
+                    <option value="1">Brakes</option>
+                    <option value="2">burst tyre(s)</option>
+                    <option value="3">Body repair</option>
+                    <option value="4">broken break light</option>
+                    <option value="5">broken side mirror</option>
+                    <option value="6">Others</option>
+                </select><br><br>
+        
+                <!--input for pick up date-->
+                <label for="pick up date">Pick up date:</label>
+                <br>
+                <input type="date" id="pick up date" name="pick up date" value=""><br>
+                <br>
+
+                <!--input for car id-->
+                <label for="car id">Plate No:</label>
+                <p class="mini-text">enter the first five characters of the plate number</p>
+                <input type="text" name="car_id">
+                <br><br>
+                
+                <button class="submit-btn">
+                    Submit
+                </button>
+                <br><br>
+            </form>
+        </div>
+
+        <div class="footer">
+            <div class="logo-text">
+              <h3 class="logo">Group 5</h3>
+              <h5>Copyright &copy; 2022</h5>
+            </div>
+  
+            <!--<div class="quick-links">
+              <br>
+              <h5>Quick links</h5><br>
+              <ul>
+                <li>FAQs</li>
+                <br>
+                <li>Pricing</li>
+                <br>
+                <li>Returns & Refunds</li>
+                <br>
+                <li>About us</li>
+              </ul>
+            </div>
+        -->
+            <div class="contact">
+              <h5>Have a question?</h5>
+              <p>Call or text us. Message and data rates apply.</p>
+              <a href="#">+234 789 345 2221</a>
+                <br><br>
+              <div class="social-links">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+    </div>
+    
+</body>
+</html>

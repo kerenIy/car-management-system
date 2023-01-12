@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/0a4991b62f.js"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navigation-bar">
+        <div class="logo">
+            <img src="images/logo-img.svg" alt="" class="logo-img">
+            <!--<p>Group 5</p>-->
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="">Contact Us</a>
+            <a href="">About</a>
+            <a href=""><i class="fa-solid fa-user"></i></a>
+        </nav>
+    </div>
+
+    <div class="container">
+
+        <div class="container-banner">
+            <div class="text">
+                <h3>CAR REGISTRATION</h3>
+                <p>Register new car</p>
+            </div>
+            <div class="illustration">
+                <img src="images/car-img-svg.svg" alt="" class="banner-img">
+            </div>
+        </div>
+
+        <div class="form-container">
+            <h4>ENTER CAR DETAILS HERE</h4>
+            <form action = "car_form.php"
+            method="POST">
+                <!--input for car_id-->
+                <label for="car_id">Car Id:</label>
+                <p class="mini-text">enter the first five characters of the plate_no</p>
+                <input type="text" name="car_id">
+                <br>
+                <!--input for car brands-->
+                <label for="car_brands">Car Brand:</label>
+                <br>
+                <select name="make" id="car-brands">
+                    <option value="Toyota">Toyota</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Jeep">Jeep</option>
+                    <option value="Volvo">Volvo</option>
+                    <option value="Benz">Mercedes</option>
+                    <option value="Lexus">Lexus</option>
+                    <option value="Hyundia">Hyundia</option>
+                </select><br>
+        
+                <!--inout for the car model-->
+                <label for="car_model">Car Model:</label> <br>
+                <select name="model" id="car-model">
+                    <option value="Camry">Camry</option>
+                    <option value="Benz">Benz</option>
+                    <option value="Corolla">Corolla</option>
+                    <option value="Gclass">Gclass</option>
+                    <option value="x350">x350</option>
+                    <option value="Gladiator">Gladiator</option>
+                    <option value="Accord">Accord</option>
+                    <option value="Azera">Azera</option>
+                </select><br>
+        
+                <!--input for car color-->
+                <label for="car_color">Color:</label>
+                <br>
+                <input type="text" name="color" id="car_color"> <br>
+        
+                <!--input for car plate number-->
+                <label for="license_plate">Plate Number:</label>
+                <br>
+                <input type="text" id="license plate" name="plate_no" 
+                value="" placeholder="ABC-1234AE" maxlength="8"><br>
+        
+                <!--input for the date of arrival-->
+                <label for="date of arrival">Date of arrival:</label>
+                <br>
+                <input type="date" id="date of arrival" name="date_of_arrival" value=""><br>
+        
+                <!--inout for the due date-->
+                <label for="due date">Due Date:</label>
+                <br>
+                <input type="date" id="due date" name="due_date" value=""><br>
+        
+                <!--input for issues-->
+                <label for="Car issues">Car Issues:</label> <br>
+                <select name="issue" id="Car issues">
+                    <option value="1">Brakes</option>
+                    <option value="2">burst tyre(s)</option>
+                    <option value="3">Re-alignment</option>
+                    <option value="4">Engine</option>
+                    <option value="5">Others</option>
+                </select>
+                <br><br>
+                <!--submit button-->
+                <button class="submit-btn">
+                    Submit
+                </button>
+            </form>
+        </div>
+        
+        <br><br>
+
+        <div class="footer">
+            <div class="logo-text">
+              <h3 class="logo">Group 5</h3>
+              <h5>Copyright &copy; 2022</h5>
+            </div>
+  
+            <!--<div class="quick-links">
+              <br>
+              <h5>Quick links</h5><br>
+              <ul>
+                <li>FAQs</li>
+                <br>
+                <li>Pricing</li>
+                <br>
+                <li>Returns & Refunds</li>
+                <br>
+                <li>About us</li>
+              </ul>
+            </div>
+        -->
+            <div class="contact">
+              <h5>Have a question?</h5>
+              <p>Call or text us. Message and data rates apply.</p>
+              <a href="#">+234 789 345 2221</a>
+                <br><br>
+              <div class="social-links">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+
+    </div>
+    
+</body>
+</html>

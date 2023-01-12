@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanic Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/0a4991b62f.js"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navigation-bar">
+        <div class="logo">
+            <img src="images/logo-img.svg" alt="" class="logo-img">
+            <!--<p>Group 5</p>-->
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="">Contact Us</a>
+            <a href="">About</a>
+            <a href=""><i class="fa-solid fa-user"></i></a>
+        </nav>
+    </div>
+
+    <div class="container">
+
+        <div class="container-banner">
+            <div class="text">
+                <h3>MECHANIC REGISTRATION</h3>
+                <p>Register new car</p>
+            </div>
+            <div class="illustration">
+                <img src="images/worker-img-svg.svg" alt="" class="banner-img">
+            </div>
+        </div>
+
+        <div class="form-container">
+
+            <form action = "mechanic_form.php"
+            method="post" >
+                <h4>ENTER MECHANIC DETAILS HERE</h4>
+        
+                <!--textbox for lastname-->
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="last_name" value=""><br>
+        
+                <!--textbox for firstname-->
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="first_name" value=""><br>
+        
+                <!--textbox for start date-->
+                <label for="start date">Start Date:</label><br>
+                <input type="date" id="start_date" name="start_date" value=""><br>
+                <br>
+
+                <!--textbox for mechanic specialty-->
+                <label for="repair specialty">Repair specialty:</label><br>
+                <input type="text" id="repair specialty" name="specialty" value=""><br>  
+                 
+                <br>
+                <!--input for mechanic id-->
+                <label for="">Mechanic ID:</label>
+                <br>
+                <input type="text" name="mec_id">
+                <br>
+
+                <!--input for supervisor id-->
+                <label for="">Supervisor:</label>
+                <br>
+                <select name="super_id" id="">
+                  <option value="A101">Angela Roberta</option>
+                  <option value="A103">Missy Levington</option>
+                  <option value="A105">Ceaser Daniel</option>
+                  <option value="NULL">Not Applicable</option>
+                </select>
+                <br>
+
+                <!--submit button-->
+                <button class="submit-btn">
+                    Submit
+                </button><br><br>
+            </form>
+        </div>
+
+        <div class="footer">
+            <div class="logo-text">
+              <h3 class="logo">Group 5</h3>
+              <h5>Copyright &copy; 2022</h5>
+            </div>
+  
+            <!--<div class="quick-links">
+              <br>
+              <h5>Quick links</h5><br>
+              <ul>
+                <li>FAQs</li>
+                <br>
+                <li>Pricing</li>
+                <br>
+                <li>Returns & Refunds</li>
+                <br>
+                <li>About us</li>
+              </ul>
+            </div>
+        -->
+            <div class="contact">
+              <h5>Have a question?</h5>
+              <p>Call or text us. Message and data rates apply.</p>
+              <a href="#">+234 789 345 2221</a>
+                <br><br>
+              <div class="social-links">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+    </div>
+    
+</body>
+</html>
